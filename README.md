@@ -20,14 +20,16 @@ Please use the [issues](https://github.com/BitTurk/BitTurkAPI/issues) on this gi
 
 
 ## Ping
+You can check API connection with ping url
 
 <code>GET</code> [https://api.bitturk.com/v1/ping]
 
 
 
 ## Server Time
-<code>GET</code> [https://api.bitturk.com/v1/time]
+Current server time
 
+<code>GET</code> [https://api.bitturk.com/v1/time]
 
 
 ## Ticker

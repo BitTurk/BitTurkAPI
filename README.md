@@ -98,8 +98,8 @@ client.DefaultRequestHeaders.Add("X-Signature", Signature);
 
 
 
-Example (PHP#):
-```PHP#
+Example (PHP):
+```PHP
 
 $now = time();
 $PlainText = yourAPIKey.$now;
@@ -117,7 +117,7 @@ Warning: Your IP address can be blocked if you make too many unauthorized reques
 ## User Wallet
 <code>GET</code> [https://api.bitturk.com/v1/userwallet?Symbol=BTC]
 
-<code>Symbol</code> parameter: <code>BTC</code>, <code>ETH</code>, <code>XRP</code>, <code>LTC</code>,  <code>NEO</code>, <code>XMR</code>, <code>DASH</code>
+<code>Symbol</code> parameter: <code>BTC</code>, <code>ETH</code>, <code>XRP</code>, <code>LTC</code>,  <code>NEO</code>, <code>XMR</code>, <code>DASH</code>, <code>TRY</code>
 
 
 
@@ -147,6 +147,9 @@ Warning: Your IP address can be blocked if you make too many unauthorized reques
 <code>GET</code> [https://api.bitturk.com/v1/userordercancel?Pair=BTCTRY&OrderId=1234]
 
 <code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+
+<code>OrderId</code> parameter: <code>You can get Order Id from Open Order list api</code>
+
 
 
 ## User Create Order

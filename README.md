@@ -32,6 +32,10 @@ Current server time
 <code>GET</code> [https://api.bitturk.com/v1/time]
 
 
+## Exchange Info
+<code>GET</code> [https://api.bitturk.com/v1/exchangeinfo]
+
+
 ## Ticker
 <code>GET</code> [https://api.bitturk.com/v1/ticker]
 
@@ -44,7 +48,9 @@ Current server time
 ## Last Transactions
 <code>GET</code> [https://api.bitturk.com/v1/transactions?Pair=BTCTRY]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
+
+
 
 
 
@@ -124,7 +130,7 @@ Warning: Your IP address can be blocked if you make too many unauthorized reques
 ## User Transactions
 <code>GET</code> [https://api.bitturk.com/v1/usertransactions?Pair=BTCTRY&Offset=0&Limit=10&Sort=asc]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
 
 <code>Sort</code> parameter: <code>asc</code>, <code>desc</code>
 
@@ -132,21 +138,21 @@ Warning: Your IP address can be blocked if you make too many unauthorized reques
 ## User Closed Orders
 <code>GET</code> [https://api.bitturk.com/v1/userclosedorders?Pair=BTCTRY&Offset=0]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
 
 
 
 ## User Open Orders
 <code>GET</code> [https://api.bitturk.com/v1/useropenorders?Pair=BTCTRY]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
 
 
 
 ## User Cancel Order
 <code>GET</code> [https://api.bitturk.com/v1/userordercancel?Pair=BTCTRY&OrderId=1234]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
 
 <code>OrderId</code> parameter: <code>You can get Order Id from Open Order list api</code>
 
@@ -155,7 +161,7 @@ Warning: Your IP address can be blocked if you make too many unauthorized reques
 ## User Create Order
 <code>GET</code> [https://api.bitturk.com/v1/userordercreate?Pair=BTCTRY&Price=0.1&Lot=1.0&Type=buy]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
 
 <code>Type</code> parameter: <code>buy</code>, <code>sell</code>
 

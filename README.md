@@ -82,8 +82,8 @@ using (HMACSHA256 hmac = new HMACSHA256(Convert.FromBase64String(yourAPISecret))
    byte[] signatureBytes = hmac.ComputeHash(Encoding.UTF8.GetBytes(message));
    string Signature = Convert.ToBase64String(signatureBytes));
 }
-
 ```
+
 After creating the parameters, you have to send them in the HTML Header of your request with their name
 
 Example (C#):
@@ -100,13 +100,11 @@ client.DefaultRequestHeaders.Add("X-Signature", Signature);
 
 Example (PHP):
 ```PHP
-
 $now = time();
 $PlainText = yourAPIKey.$now;
 $HMACKey = yourAPISecret;
 $Hashed = hash_hmac('sha256', $PlainText, $HMACKey, true);
 $Signature = base64_encode($Hashed);
-
 ```
 
 

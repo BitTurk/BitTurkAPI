@@ -43,7 +43,7 @@ Current server time
 ## Order Book
 <code>GET</code> [https://api.bitturk.com/v1/orderbook?Pair=BTCTRY]
 
-<code>Pair</code> parameter: <code>BTCTRY</code>, <code>ETHTRY</code>, <code>XRPTRY</code>, <code>LTCTRY</code>,  <code>NEOTRY</code>, <code>XMRTRY</code>, <code>DASHTRY</code>
+<code>Pair</code> parameter: <code>You can get available pair from [https://api.bitturk.com/v1/exchangeinfo]</code>
 
 ## Last Transactions
 <code>GET</code> [https://api.bitturk.com/v1/transactions?Pair=BTCTRY]

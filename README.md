@@ -85,7 +85,7 @@ var timeSpan = (DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0));
 var unixTime = (long)timeSpan.TotalSeconds;
 
 string message = yourAPIKey + unixTime;
-using (HMACSHA256 hmac = new HMACSHA256(Convert.FromBase64String(yourAPISecret)))
+using (HMACSHA256 hmac = new HMACSHA256(Encoding.UTF8.GetBytes(yourAPISecret)))
 {
    byte[] signatureBytes = hmac.ComputeHash(Encoding.UTF8.GetBytes(message));
    string Signature = Convert.ToBase64String(signatureBytes));

@@ -15,7 +15,6 @@ Please use the [issues](https://github.com/BitTurk/BitTurkAPI/issues) on this gi
 
 ## Request Limits
 
-* All requests are limited to 1 request per 1 second.
 * If you make more consequent unauthorized requests your API key will be blocked
 
 
